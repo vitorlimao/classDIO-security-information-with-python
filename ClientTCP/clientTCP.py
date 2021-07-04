@@ -1,12 +1,14 @@
 import socket
 
 import sys
-
+"""Cria a conexão entre o host e um nó, checar conexões."""
 
 def main():
     try:
+        # cria um objeto do tipo socket,
+        # informa os protocolos e comunicação que serão usados AF-INET IPV4 e SOCK_STREAM TCP
         conexao = socket.socket(socket.AF_INET, socket.SOCK_STREAM,
-                                0)  # cria um objeto do tipo socket, informa os protocolos e comunicação que serão usados
+                                0)
     except socket.error as error:
         print("conexão falhou")
         print("Error.{}".format(error))

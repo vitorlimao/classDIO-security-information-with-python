@@ -1,7 +1,7 @@
 import socket
+"""Cria a conexão entre o host e um nó, checar conexões."""
 
-
-conexao:socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+conexao=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 
 print("Cliente Socket criado com sucesso!!!")
 
